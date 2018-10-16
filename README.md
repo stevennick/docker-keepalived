@@ -41,9 +41,9 @@ This image require the kernel module ip_vs loaded on the host (`modprobe ip_vs`)
 This image comes with a keepalived config file that can be easily customized via environment variables for a quick bootstrap,
 but setting your own keepalived.conf is possible. 2 options:
 
-- Link your config file at run time to `/container/service/keepalived/assets/keepalived.conf` :
+- Link your config file at run time to `/container/service/keepalived/keepalived.conf` :
 
-      docker run --volume /data/my-keepalived.conf:/container/service/keepalived/assets/keepalived.conf --detach osixia/keepalived:1.4.5
+      docker run --volume /data/my-keepalived.conf:/container/service/keepalived/keepalived.conf --detach osixia/keepalived:1.4.5
 
 - Add your config file by extending or cloning this image, please refer to the [Advanced User Guide](#advanced-user-guide)
 

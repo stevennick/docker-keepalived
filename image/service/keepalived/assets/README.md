@@ -1,1 +1,1 @@
-Add your custom keepalived.conf file here or mount one at docker run to /container/service/keepalived/assets/keepalived.conf
+Add your custom keepalived.conf file to upper level or mount one at docker run to /container/service/keepalived/keepalived.conf
