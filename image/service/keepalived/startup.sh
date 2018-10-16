@@ -11,7 +11,7 @@ if [ ! -e "$FIRST_START_DONE" ]; then
   #
   # Copy custom configuration file if found.
   #
-  if [ ! -e "${CONTAINER_SERVICE_DIR}/keepalived/keepalived.conf" ]; then
+  if [ -e "${CONTAINER_SERVICE_DIR}/keepalived/keepalived.conf" ]; then
     cp ${CONTAINER_SERVICE_DIR}/keepalived/keepalived.conf ${CONTAINER_SERVICE_DIR}/keepalived/assets/keepalived.conf
   fi
 
